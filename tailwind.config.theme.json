@@ -1,0 +1,15 @@
+{
+  "extend": {
+    "colors": {
+      "fine-pine-green-300": "var(--fine-pine-green-300)",
+      "primary-300": "var(--primary-300)",
+      "pacific-bridge-primary-400": "var(--pacific-bridge-primary-400)",
+      "squid-ink-navy-800": "var(--squid-ink-navy-800)",
+      "poppy-surprise-red-300": "var(--poppy-surprise-red-300)",
+      "golden-state-yellow-300": "var(--golden-state-yellow-300)",
+      "tamarama-teal-300": "var(--tamarama-teal-300)",
+      "da-juice-purple-300": "var(--da-juice-purple-300)"
+    },
+    "fontFamily": {}
+  }
+}
