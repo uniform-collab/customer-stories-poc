@@ -1,3 +1,4 @@
+import { AssetParamValue, flattenValues } from "@uniformdev/canvas";
 import {
   ComponentProps,
   registerUniformComponent,
@@ -7,15 +8,21 @@ type CustomerStoryProps = ComponentProps<{
   eyebrowHeading: string;
   quoteText?: string;
   jobTitle?: string;
-  companyName?: string;
+  name?: string;
+  picture: AssetParamValue;
+  displayPicture?: boolean;
 }>;
 
 const CustomerTestimonial: React.FC<CustomerStoryProps> = ({
   eyebrowHeading,
   quoteText,
   jobTitle,
-  companyName,
+  name,
+  picture,
+  displayPicture,
 }) => {
+  const { url: imgSrc, title: alt } =
+    flattenValues(picture, { toSingle: true }) || {};
   return (
     <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
@@ -28,7 +35,7 @@ const CustomerTestimonial: React.FC<CustomerStoryProps> = ({
           </blockquote>
           <figcaption className="mt-10">
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-              <div className="font-semibold text-gray-900">{companyName}</div>
+              <div className="font-semibold text-gray-900">{name}</div>
               <svg
                 width={3}
                 height={3}
@@ -39,6 +46,13 @@ const CustomerTestimonial: React.FC<CustomerStoryProps> = ({
                 <circle r={1} cx={1} cy={1} />
               </svg>
               <div className="text-gray-600">{jobTitle}</div>
+              {displayPicture && imgSrc ? (
+                <img
+                  alt={alt}
+                  src={imgSrc}
+                  className="mx-auto w-24 rounded-full"
+                />
+              ) : null}
             </div>
           </figcaption>
         </figure>
