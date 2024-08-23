@@ -3,3 +3,4 @@ import "./compositionTypes/CustomerStoryComposition";
 import "./CustomerTestimonial";
 import "./List/ListContainer";
 import "./List/ListItem";
+import "./Stats/StatBlocks";
