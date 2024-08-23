@@ -1,0 +1,33 @@
+id: organization
+displayName: Organization
+ttl: 30
+path: /entries
+custom:
+  include: 1
+  includeFields: []
+  allowContentTypeIds:
+    - companyNameInternal
+  enableFilterByLocale: false
+  enableAdvancedFilters: false
+method: GET
+purgeKey: c2bf9f63-70d7-4ba6-83e4-43373ad712f2
+archetype: singleEntry
+variables:
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  entryIds:
+    type: text
+    default: ''
+    displayName: Entry Ids
+parameters:
+  - key: include
+    value: '1'
+  - key: locale
+    value: ${locale}
+    omitIfEmpty: true
+  - key: sys.id[in]
+    value: ${entryIds}
+dataSourceId: contentfulStaging
+allowedOnComponents: []

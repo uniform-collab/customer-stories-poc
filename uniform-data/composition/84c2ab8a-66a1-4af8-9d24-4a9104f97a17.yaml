@@ -18,9 +18,47 @@ composition:
             variables:
               locale: ''
               entryIds: 3UxOHPQnJokesDWIwU0Mtd
-      - _id: 58b37cc4-4c36-408a-b16a-ad13b9afbcff
-        type: listContainer
-        _pattern: cc13a7a1-8f1a-4d7f-a3a2-db5ceb73cad1
+      - _id: 91cf013b-26a8-4ca3-9130-c92fccccdbb4
+        type: statBlocks
+        _pattern: 56e0f7c8-a550-4b08-90b6-1c5d2077faab
+        _dataResources:
+          Organization:
+            type: organization
+            variables:
+              locale: ''
+              entryIds: 3Vqz3XmnQAGFk67ynjV5ku
+      - _id: 920e1f5b-db55-4841-9324-a988c92fd4e4
+        type: splitContainer
+        slots:
+          leftContent:
+            - _id: 58b37cc4-4c36-408a-b16a-ad13b9afbcff
+              type: listContainer
+              _pattern: cc13a7a1-8f1a-4d7f-a3a2-db5ceb73cad1
+            - _id: 96c20024-3193-43cd-b38f-d6152fe1c03a
+              type: customerTestimonial
+              _pattern: 72f222f1-a818-42df-823b-8b29b57da555
+            - _id: caf5e393-ff4b-4144-b36f-3351284bbeb9
+              type: listContainer
+              _pattern: 2eaee1cc-7aa9-48e6-a005-122d135e1f5c
+              _dataResources:
+                Content:
+                  type: singleStory
+                  variables:
+                    locale: ''
+                    entryIds: ydFXXZEqkEsXqAfIs5kF3
+            - _id: 2d0a72ce-efcd-4ad0-9366-2f68ae5de808
+              type: listContainer
+              _pattern: 395a1a92-629c-40a3-9713-1b6a91167cc6
+        parameters:
+          splitType:
+            type: select
+            value: 30-70
+  _overrides:
+    91cf013b-26a8-4ca3-9130-c92fccccdbb4:
+      parameters:
+        blockColor:
+          type: tp2-color-palette-parameter
+          value: fine-pine-green-300
 created: '2024-08-23T17:47:07.346691+00:00'
-modified: '2024-08-23T18:22:06.424992+00:00'
+modified: '2024-08-23T23:54:52.305577+00:00'
 pattern: false

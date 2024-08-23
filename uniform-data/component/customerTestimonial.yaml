@@ -16,18 +16,35 @@ parameters:
       multiline: true
       linesCount: 5
     localizable: true
+  - id: name
+    name: Name
+    type: text
+    typeConfig: null
   - id: jobTitle
     name: Job Title
     type: text
     typeConfig: null
-  - id: companyName
-    name: Company Name
-    type: text
+  - id: picture
+    name: Picture
+    type: asset
+    typeConfig:
+      max: 1
+  - id: de403923-df21-49d7-b16a-b05d6bcbf66e
+    name: Display
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - displayPicture
+  - id: displayPicture
+    name: Display Picture
+    type: checkbox
     typeConfig: null
 categoryId: ce5364d3-6c03-40be-94e8-38201a736d88
 useTeamPermissions: true
 slots: []
 titleParameter: eyebrowHeading
+thumbnailParameter: picture
 canBeComposition: false
 created: '2024-08-23T17:52:55.837774+00:00'
-updated: '2024-08-23T17:52:55.837774+00:00'
+updated: '2024-08-23T23:38:31.371655+00:00'

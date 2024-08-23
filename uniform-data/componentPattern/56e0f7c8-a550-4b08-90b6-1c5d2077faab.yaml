@@ -1,0 +1,71 @@
+composition:
+  _name: Company Stat Blocks
+  _id: 56e0f7c8-a550-4b08-90b6-1c5d2077faab
+  type: statBlocks
+  parameters:
+    logo:
+      type: asset
+      value:
+        - _id: 1516e449-a0a7-460a-85d6-16538ab520fe
+          type: image
+          fields:
+            url:
+              type: text
+              value: ${#jptr:/Organization/fields/logo/0/fields/file/url}
+          _source: custom-url
+    stats:
+      type: $block
+      value:
+        - _id: e3a0e018-57c7-4f85-8b53-53a6a3e057cf
+          type: $loop
+          fields:
+            body:
+              type: $block
+              value:
+                - _id: 15a9d54d-fc4c-4c3f-ad0b-ee1644cdd1c2
+                  type: stat
+                  fields:
+                    stat:
+                      type: text
+                      value: ${#jptr:/Stat List items Loop Item/fields/stat}
+                    description:
+                      type: text
+                      value: >-
+                        ${#jptr:/Stat List items Loop
+                        Item/fields/statDescription}
+          _dataResources:
+            Stat List items Loop Item:
+              type: sys-reserved-loop
+              variables:
+                limit: '3'
+                connectedData: '#jptr:/Stat List/items:fa=c'
+    blockColor:
+      type: tp2-color-palette-parameter
+      value: tamarama-teal-300
+  _dataResources:
+    Stat List:
+      type: statList
+      variables:
+        locale: ''
+        entryIds: 5Rtp1MOeMxBZmieHunLFNG
+      isPatternParameter: true
+      ignorePatternParameterDefault: false
+    Organization:
+      type: organization
+      variables:
+        locale: ''
+        entryIds: m931Wl6hc4AfvLzXtx6gI
+      isPatternParameter: true
+      ignorePatternParameterDefault: false
+  _overridability:
+    parameters:
+      $viz: 'yes'
+      logo: 'yes'
+      blockColor: 'yes'
+    hideLockedParameters: true
+created: '2024-08-23T23:10:38.146625+00:00'
+modified: '2024-08-23T23:24:04.682016+00:00'
+pattern: true
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1724454902/atlassian-poc/stat-blocks_zqwbrj.png
+categoryId: ce5364d3-6c03-40be-94e8-38201a736d88

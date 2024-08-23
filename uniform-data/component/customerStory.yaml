@@ -2,7 +2,7 @@
 $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: customerStory
 name: Customer Story
-icon: screen
+icon: user-list
 parameters:
   - id: title
     name: Title
@@ -15,6 +15,7 @@ parameters:
     typeConfig:
       multiline: true
     localizable: true
+categoryId: 5bfd3395-a77b-49c3-b3ab-99aa72f6d11d
 useTeamPermissions: true
 slots:
   - id: content
@@ -26,4 +27,4 @@ slots:
 titleParameter: title
 canBeComposition: true
 created: '2024-08-23T17:46:10.585642+00:00'
-updated: '2024-08-23T17:46:10.585642+00:00'
+updated: '2024-08-23T19:15:45.527407+00:00'

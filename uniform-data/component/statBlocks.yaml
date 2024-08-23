@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: statBlocks
+name: Stat Blocks
+icon: performance
+parameters:
+  - id: logo
+    name: Logo
+    type: asset
+    typeConfig:
+      max: 1
+      required: true
+  - id: blockColor
+    name: Block Color
+    type: tp2-color-palette-parameter
+    typeConfig:
+      allowColors:
+        - primary-300
+        - pacific-bridge-primary-400
+        - squid-ink-navy-800
+        - fine-pine-green-300
+        - da-juice-purple-300
+        - tamarama-teal-300
+  - id: stats
+    name: Stats
+    type: $block
+    typeConfig:
+      max: 3
+      min: 1
+      required: true
+      allowedTypes:
+        - $loop
+        - stat
+categoryId: ce5364d3-6c03-40be-94e8-38201a736d88
+useTeamPermissions: true
+slots: []
+thumbnailParameter: logo
+canBeComposition: false
+created: '2024-08-23T22:44:43.464154+00:00'
+updated: '2024-08-23T22:54:01.584046+00:00'

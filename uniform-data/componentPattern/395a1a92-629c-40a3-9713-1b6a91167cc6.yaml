@@ -1,83 +1,78 @@
 composition:
-  _name: Product List
-  _id: cc13a7a1-8f1a-4d7f-a3a2-db5ceb73cad1
+  _name: Solution Partners List
+  _id: 395a1a92-629c-40a3-9713-1b6a91167cc6
   type: listContainer
   parameters:
     title:
       type: text
-      value: Atlassian Products
+      value: Solution Partners
     listItems:
       type: $block
       value:
-        - _id: 8fa3aec2-fe74-4260-95d0-d3109ae0fa56
+        - _id: ae69ecb1-e5b5-403f-9c28-2ffa9cd18705
           type: $loop
           fields:
             body:
               type: $block
               value:
-                - _id: 170e2fb3-5bcb-4945-920c-2e13d4dbe9f3
+                - _id: 1dd358e9-2dc4-4fc5-ac52-6400b229253e
                   type: listItem
                   fields:
                     icon:
                       type: asset
                       value:
-                        - _id: 0c36f1ea-719e-44a9-a6c7-88fd81f7c138
+                        - _id: c02c34f9-148f-4adb-a855-f853725cdc6a
                           type: image
                           fields:
                             id:
                               type: text
-                              value: 04957801-b6b2-4329-8254-2d400ef543f8
+                              value: c4dc8d71-3b39-4eb3-bc88-789b14512dc7
                             url:
                               value: >-
-                                https://img.uniform.global/p/kAgJg4KoTfeUGbSvnZ7zbQ/0NBh9tkwQaWrUfBTWyjWGA-image.png
+                                https://img.uniform.global/p/kAgJg4KoTfeUGbSvnZ7zbQ/vvCY-EszQEKSQCoY0ub-9g-deiser.svg
                               type: text
                             file:
                               type: file
-                              value: f0b1d578-d986-4b51-b227-986778e5808f
+                              value: ece220b7-184b-4f9a-bd8f-ceadb984c806
                             size:
-                              value: 6341
+                              value: 1235
                               type: number
                             title:
                               type: text
-                              value: image.png
+                              value: deiser.svg
                             width:
-                              value: 161
+                              value: 150
                               type: number
                             height:
-                              value: 161
+                              value: 150
                               type: number
                             mediaType:
-                              value: image/png
+                              value: image/svg+xml
                               type: text
                           _source: uniform-assets
-                    link:
-                      type: link
-                      value:
-                        path: ${#jptr:/Content product Loop Item/fields/url}
-                        type: url
                     title:
                       type: text
-                      value: ${#jptr:/Content product Loop Item/fields/internalTitle}
+                      value: >-
+                        ${#jptr:/Content solutionPartners Loop
+                        Item/fields/organizationNameExternal}
                     subTitle:
                       type: text
-                      value: ${#jptr:/Content product Loop Item/fields/productBlurb}
+                      value: >-
+                        ${#jptr:/Content solutionPartners Loop
+                        Item/fields/industry/0/fields/industryNameExternal}
           _dataResources:
-            Content product Loop Item:
+            Content solutionPartners Loop Item:
               type: sys-reserved-loop
               variables:
-                connectedData: '#jptr:/Content/fields/product:fa=c'
+                connectedData: '#jptr:/Content/fields/solutionPartners:fa=c'
   _dataResources:
     Content:
       type: singleStory
       variables:
         locale: ''
-        entryIds: 3UxOHPQnJokesDWIwU0Mtd
+        entryIds: 6Q1Qf2rszsqh4o9aA5aBJb
       isPatternParameter: true
       ignorePatternParameterDefault: false
-  _overridability:
-    parameters:
-      title: 'yes'
-    hideLockedParameters: true
-created: '2024-08-23T19:04:06.782727+00:00'
-modified: '2024-08-23T22:19:42.785821+00:00'
+created: '2024-08-23T22:09:29.259969+00:00'
+modified: '2024-08-23T22:13:14.909655+00:00'
 pattern: true

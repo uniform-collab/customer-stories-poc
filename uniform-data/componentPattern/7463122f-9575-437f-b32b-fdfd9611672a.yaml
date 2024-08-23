@@ -1,5 +1,5 @@
 composition:
-  _name: Customer Quote
+  _name: Customer Story Quote
   _id: 7463122f-9575-437f-b32b-fdfd9611672a
   type: customerTestimonial
   parameters:
@@ -9,7 +9,7 @@ composition:
     quoteText:
       type: text
       value: ${#jptr:/Content/fields/advocateQuotes/0/fields/advocateQuote}
-    companyName:
+    name:
       type: text
       value: ${#jptr:/Content/fields/advocateQuotes/0/fields/advocateName}
     eyebrowHeading:
@@ -30,5 +30,5 @@ composition:
       eyebrowHeading: 'yes'
     hideLockedParameters: true
 created: '2024-08-23T17:54:59.231958+00:00'
-modified: '2024-08-23T17:58:28.097901+00:00'
+modified: '2024-08-23T23:35:31.385601+00:00'
 pattern: true
