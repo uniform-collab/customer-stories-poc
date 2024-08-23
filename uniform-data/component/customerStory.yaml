@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: customerStory
+name: Customer Story
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: metaDescription
+    name: Meta Description
+    type: text
+    typeConfig:
+      multiline: true
+    localizable: true
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: true
+created: '2024-08-23T17:46:10.585642+00:00'
+updated: '2024-08-23T17:46:10.585642+00:00'

@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: listContainer
+name: List Container
+icon: play-list-check
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: listItems
+    name: List Items
+    type: $block
+    typeConfig:
+      max: 3
+      allowedTypes:
+        - listItem
+        - $loop
+categoryId: ce5364d3-6c03-40be-94e8-38201a736d88
+useTeamPermissions: true
+slots:
+  - id: listItems
+    name: List Items
+    maxComponents: 5
+    allowedComponents:
+      - listItem
+      - $loop
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2024-08-23T18:03:26.771552+00:00'
+updated: '2024-08-23T18:30:53.563528+00:00'

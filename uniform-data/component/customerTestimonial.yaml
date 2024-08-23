@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: customerTestimonial
+name: Customer Testimonial
+icon: quote-o
+parameters:
+  - id: eyebrowHeading
+    name: Eyebrow Heading
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: quoteText
+    name: Quote Text
+    type: text
+    typeConfig:
+      multiline: true
+      linesCount: 5
+    localizable: true
+  - id: jobTitle
+    name: Job Title
+    type: text
+    typeConfig: null
+  - id: companyName
+    name: Company Name
+    type: text
+    typeConfig: null
+categoryId: ce5364d3-6c03-40be-94e8-38201a736d88
+useTeamPermissions: true
+slots: []
+titleParameter: eyebrowHeading
+canBeComposition: false
+created: '2024-08-23T17:52:55.837774+00:00'
+updated: '2024-08-23T17:52:55.837774+00:00'

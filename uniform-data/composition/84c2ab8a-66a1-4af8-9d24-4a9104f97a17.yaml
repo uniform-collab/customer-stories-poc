@@ -1,0 +1,26 @@
+composition:
+  _name: Reddit
+  _id: 84c2ab8a-66a1-4af8-9d24-4a9104f97a17
+  _slug: reddit
+  type: customerStory
+  parameters:
+    title:
+      type: text
+      value: Reddit
+  slots:
+    content:
+      - _id: e2e12d75-6099-4af0-9081-6e94cb8c6730
+        type: customerTestimonial
+        _pattern: 7463122f-9575-437f-b32b-fdfd9611672a
+        _dataResources:
+          Content:
+            type: singleStory
+            variables:
+              locale: ''
+              entryIds: 3UxOHPQnJokesDWIwU0Mtd
+      - _id: 58b37cc4-4c36-408a-b16a-ad13b9afbcff
+        type: listContainer
+        _pattern: cc13a7a1-8f1a-4d7f-a3a2-db5ceb73cad1
+created: '2024-08-23T17:47:07.346691+00:00'
+modified: '2024-08-23T18:22:06.424992+00:00'
+pattern: false

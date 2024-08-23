@@ -4,9 +4,9 @@ import {
   type ComponentProps,
 } from "@uniformdev/canvas-react";
 
-type PageProps = ComponentProps;
+type PageCompositionProps = ComponentProps;
 
-const Page: React.FC<PageProps> = () => (
+const PageComposition: React.FC<PageCompositionProps> = () => (
   <div>
     <UniformSlot name="content" />
   </div>
@@ -14,7 +14,7 @@ const Page: React.FC<PageProps> = () => (
 
 registerUniformComponent({
   type: "page",
-  component: Page,
+  component: PageComposition,
 });
 
-export default Page;
+export default PageComposition;

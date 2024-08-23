@@ -1,0 +1,114 @@
+composition:
+  _name: List Container
+  _id: cc13a7a1-8f1a-4d7f-a3a2-db5ceb73cad1
+  type: listContainer
+  parameters:
+    title:
+      type: text
+      value: Atlassian Products
+    listItems:
+      type: $block
+      value:
+        - _id: 8fa3aec2-fe74-4260-95d0-d3109ae0fa56
+          type: $loop
+          fields:
+            body:
+              type: $block
+              value:
+                - _id: 170e2fb3-5bcb-4945-920c-2e13d4dbe9f3
+                  type: listItem
+                  fields:
+                    title:
+                      type: text
+                      value: ${#jptr:/Content product Loop Item/fields/internalTitle}
+                    subTitle:
+                      type: text
+                      value: ${#jptr:/Content product Loop Item/fields/productBlurb}
+          _dataResources:
+            Content product Loop Item:
+              type: sys-reserved-loop
+              variables:
+                connectedData: '#jptr:/Content/fields/product:fa=c'
+  slots:
+    listItems:
+      - _id: 468f0220-1b86-403d-b0f1-3d3f0c951a50
+        type: $loop
+        slots:
+          body:
+            - _id: fce03fb0-7256-46b1-a513-2f435fe83e1c
+              type: listItem
+              parameters:
+                icon:
+                  type: asset
+                  value:
+                    - _id: 670c4f3f-fa5a-4906-9209-62017c6088ec
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 04957801-b6b2-4329-8254-2d400ef543f8
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/kAgJg4KoTfeUGbSvnZ7zbQ/0NBh9tkwQaWrUfBTWyjWGA-image.png
+                          type: text
+                        file:
+                          type: file
+                          value: f0b1d578-d986-4b51-b227-986778e5808f
+                        size:
+                          value: 6341
+                          type: number
+                        title:
+                          type: text
+                          value: image.png
+                        width:
+                          value: 161
+                          type: number
+                        height:
+                          value: 161
+                          type: number
+                        mediaType:
+                          value: image/png
+                          type: text
+                      _source: uniform-assets
+                link:
+                  type: link
+                  value:
+                    path: ${#jptr:/Content product Loop Item/fields/url}
+                    type: url
+                title:
+                  type: text
+                  value: ${#jptr:/Content product Loop Item/fields/internalTitle}
+                subtitle:
+                  type: text
+                  value: ${#jptr:/Content product Loop Item/fields/productBlurb}
+              _overridability:
+                parameters:
+                  icon: 'yes'
+                  link: 'yes'
+                  title: 'yes'
+                  subtitle: 'yes'
+                hideLockedParameters: true
+        _dataResources:
+          Content product Loop Item:
+            type: sys-reserved-loop
+            variables:
+              skip: '1'
+              limit: '3'
+              connectedData: '#jptr:/Content/fields/product:fa=c'
+        _overridability:
+          hideLockedParameters: true
+  _dataResources:
+    Content:
+      type: singleStory
+      variables:
+        locale: ''
+        entryIds: 3UxOHPQnJokesDWIwU0Mtd
+      isPatternParameter: true
+      ignorePatternParameterDefault: false
+  _overridability:
+    parameters:
+      title: 'yes'
+    hideLockedParameters: true
+created: '2024-08-23T18:06:21.134336+00:00'
+modified: '2024-08-23T18:31:37.814869+00:00'
+pattern: true
