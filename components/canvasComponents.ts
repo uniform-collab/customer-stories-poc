@@ -4,3 +4,4 @@ import "./CustomerTestimonial";
 import "./List/ListContainer";
 import "./List/ListItem";
 import "./Stats/StatBlocks";
+import "./containers/SplitContainer";
