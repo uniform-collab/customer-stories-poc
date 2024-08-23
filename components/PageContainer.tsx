@@ -4,13 +4,13 @@ import { RootComponentInstance } from "@uniformdev/canvas";
 import { UniformComposition } from "@uniformdev/canvas-react";
 import { useSetViewportQuirk } from "@/hooks/useSetViewportQuirk";
 
-export interface PageCompositionProps {
+export interface PageContainerProps {
   data: RootComponentInstance;
 }
 
-export default function PageComposition({
+export default function PageContainer({
   data: composition,
-}: PageCompositionProps) {
+}: PageContainerProps) {
   const { metaTitle } = composition?.parameters || {};
   // set initial viewport quirk
   useSetViewportQuirk();
