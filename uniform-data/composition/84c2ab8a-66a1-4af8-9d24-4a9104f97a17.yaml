@@ -49,10 +49,26 @@ composition:
             - _id: 2d0a72ce-efcd-4ad0-9366-2f68ae5de808
               type: listContainer
               _pattern: 395a1a92-629c-40a3-9713-1b6a91167cc6
+          rightContent:
+            - _id: b39c1c65-efe5-4bf8-b555-60df8a624e67
+              type: title
+              parameters:
+                title:
+                  type: text
+                  value: ${#jptr:/Current Story Content/fields/storyTitleExternal}
+                htmlTag:
+                  type: tp2-segmented-control-parameter
+                  value: H2
         parameters:
           splitType:
             type: select
             value: 30-70
+  _dataResources:
+    Current Story Content:
+      type: singleStory
+      variables:
+        locale: ''
+        entryIds: 3UxOHPQnJokesDWIwU0Mtd
   _overrides:
     91cf013b-26a8-4ca3-9130-c92fccccdbb4:
       parameters:
@@ -60,5 +76,5 @@ composition:
           type: tp2-color-palette-parameter
           value: fine-pine-green-300
 created: '2024-08-23T17:47:07.346691+00:00'
-modified: '2024-08-23T23:54:52.305577+00:00'
+modified: '2024-08-24T00:09:16.211568+00:00'
 pattern: false
