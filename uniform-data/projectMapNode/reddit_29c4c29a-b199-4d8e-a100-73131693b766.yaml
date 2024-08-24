@@ -1,9 +1,0 @@
-id: 29c4c29a-b199-4d8e-a100-73131693b766
-name: Reddit
-order: 500
-path: /customers/reddit
-type: composition
-pathSegment: reddit
-data: {}
-compositionId: 84c2ab8a-66a1-4af8-9d24-4a9104f97a17
-projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

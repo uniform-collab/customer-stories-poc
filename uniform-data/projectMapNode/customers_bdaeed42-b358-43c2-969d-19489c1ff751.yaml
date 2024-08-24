@@ -1,8 +1,0 @@
-id: bdaeed42-b358-43c2-969d-19489c1ff751
-name: Customers
-order: 500
-path: /customers
-type: placeholder
-pathSegment: customers
-data: {}
-projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb
