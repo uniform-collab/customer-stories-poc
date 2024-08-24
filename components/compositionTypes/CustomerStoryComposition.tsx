@@ -10,7 +10,12 @@ type CustomerCompositionProps = ComponentProps<{
 
 const CustomerStoryComposition: React.FC<CustomerCompositionProps> = () => (
   <div>
-    <UniformSlot name="content" />
+    <UniformSlot
+      name="content"
+      emptyPlaceholder={
+        <div style={{ width: 400, height: 100, marginTop: 30 }} />
+      }
+    />
   </div>
 );
 

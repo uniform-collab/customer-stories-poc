@@ -6,3 +6,5 @@ import "./List/ListItem";
 import "./Stats/StatBlocks";
 import "./containers/SplitContainer";
 import "./atoms/Title";
+import "./atoms/StoryBlock";
+import "./atoms/Video";
