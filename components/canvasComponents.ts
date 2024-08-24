@@ -5,3 +5,4 @@ import "./List/ListContainer";
 import "./List/ListItem";
 import "./Stats/StatBlocks";
 import "./containers/SplitContainer";
+import "./atoms/Title";
