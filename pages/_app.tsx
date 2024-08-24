@@ -6,6 +6,7 @@ import createUniformContext from "lib/uniform/uniformContext";
 import "../components/canvasComponents";
 
 import "../styles/styles.css";
+import '@/styles/colors.css';
 
 const clientContext = createUniformContext();
 
