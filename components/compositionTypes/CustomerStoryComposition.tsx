@@ -8,11 +8,8 @@ type CustomerCompositionProps = ComponentProps<{
   title: string;
 }>;
 
-const CustomerStoryComposition: React.FC<CustomerCompositionProps> = ({
-  title,
-}) => (
+const CustomerStoryComposition: React.FC<CustomerCompositionProps> = () => (
   <div>
-    <h3 className="color-red">{title}</h3>
     <UniformSlot name="content" />
   </div>
 );
