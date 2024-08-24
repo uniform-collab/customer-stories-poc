@@ -4,35 +4,23 @@ import {
   registerUniformComponent,
 } from "@uniformdev/canvas-react";
 import { AssetParamValue, BlockValue, flattenValues } from "@uniformdev/canvas";
+import StatBlock from "./StatBlock";
 
-interface StatItem {
-  label: string;
-  value: string;
-}
+type StatBlockItem = {
+  description: string;
+  stat: string;
+};
 
-interface StatItemProps {
-  label: string;
-  value: string;
-}
-
-interface StatBlocksProps extends ComponentProps {
-  stats: BlockValue[];
+type StatBlocksProps = ComponentProps<{
+  stats: BlockValue;
   logo: AssetParamValue;
   blockColor: string;
-}
-
-const StatBlock: React.FC<StatItemProps> = ({ label, value }) => (
-  <div className="flex flex-col items-center">
-    <span className="text-4xl font-bold text-blue-600">{value}</span>
-    <p className="mt-2 text-sm text-gray-600 text-center max-w-[200px]">
-      {label}
-    </p>
-  </div>
-);
+}>;
 
 const StatBlocks: React.FC<StatBlocksProps> = ({ logo, blockColor, stats }) => {
   const logoSrc = flattenValues(logo, { toSingle: true })?.url;
-  const statData = flattenValues(stats);
+  // @ts-expect-error
+  const statData = flattenValues(stats) as Array<StatBlockItem>;
   return (
     <div className="relative">
       <div

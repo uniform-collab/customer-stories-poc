@@ -4,7 +4,7 @@ import {
   documentToHtmlString,
   Options,
 } from "@contentful/rich-text-html-renderer";
-import { BLOCKS, NodeData } from "@contentful/rich-text-types";
+import { BLOCKS, Document, NodeData } from "@contentful/rich-text-types";
 import {
   ComponentProps,
   registerUniformComponent,
